@@ -3,7 +3,11 @@
     /* Optional: define a max width for the cards for better control on large screens */
     max-width: 370px;
     height: 254px;
-    margin: 0 auto; /* Centers card in column when it's smaller than the max-width */
+    margin: 0 auto; 
+    ;
+ background-color: var(--50, #EFF6FF);;
+ border-radius: 20px;
+overflow: hidden;
   }
  .card-title{
     font-size: 24px;
@@ -12,17 +16,20 @@
     padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
     margin-bottom: 0;
     color: var(--bs-card-cap-color);
-    background-color: #fff;
+    background-color:  var(--50, #EFF6FF);;
     border-bottom:none;
 }
 .card-footer {
     padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
     color: var(--bs-card-cap-color);
-    background-color:#fff;
+    background-color: var(--50, #EFF6FF);;
     border-top:none;
 }
 .card-body {
     flex: 1 1 auto;
     padding: 1rem 1rem 0;
     color: var(--bs-card-color);
+    background-color: var(--50, #EFF6FF);;
+
 }
+

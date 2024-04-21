@@ -19,7 +19,7 @@
     position: absolute;
     width: 98%;
     height: 100px;
-    background-color: #ffffff;
+    background-color: var(--50, #EFF6FF);
     bottom: 0;
     right: 0;
     border-top-left-radius: 66px;

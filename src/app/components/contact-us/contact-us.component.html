@@ -1,0 +1,43 @@
+<section class="contact-us my-5 py-5">
+    <div class="w-70 mx-auto">
+        <div class="row footer-row ">
+            <div class="col-lg-6 col-sm-12 custom-class1 p-0 ">
+                <p dir="rtl" class="lg-font fs-1 fw-bold d-flex justify-content-center ms-5 ps-5">تواصل مع</p>
+                <div class="d-flex justify-content-center">
+                    <img src="./assets/logo-removebg-preview.png" alt="" class="logo-img">
+                </div>
+                <div class="d-flex justify-content-center contact-icons mt-2 mb-5">
+                    <div class="">
+                        <a href=""><i class="bi  bi-telephone-fill fs-5 footer-text text-light rounded-5 mx-1 px-2"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-f fs-5 footer-text text-light rounded-5 mx-1 p-facebook py-2"></i></a>
+                        <a href=""><i class="bi  bi-instagram fs-5 footer-text text-light rounded-5 mx-1 px-2"></i></a>
+                        <a href=""><i class="bi  bi-twitter-x fs-5 footer-text text-light rounded-5 mx-1 px-2"></i></a>
+                        <a href=""><i class="bi  bi-whatsapp fs-5 footer-text text-light rounded-5 mx-1 px-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 form-div p-0">
+              
+             <form [formGroup]="contactForm" (ngSubmit)="onSubmit() "class="form-1">
+               <div class="form-group mb-3">
+                  <input type="text" id="name" class="form-control border-1 py-2 fs-5" formControlName="name"  dir="rtl" placeholder="الاسم">
+               </div>
+      
+              <div class="form-group  mb-3"> 
+                <input type="email" id="email" class="form-control border-1 py-2 fs-5" formControlName="email"  dir="rtl" placeholder="الايميل">
+              </div>
+      
+              <div class="form-group mb-3">
+                <textarea id="message" class="form-control border-1 fs-5 " formControlName="message" placeholder="Write your message" rows="8"  dir="rtl" placeholder="كيف نساعدك؟"></textarea>
+             </div>
+      
+             <div class="d-flex justify-content-center mt-2">
+                <button type="button" class="btn btn-send rounded-4  fw-bold py-2 px-4 fs-5 ">إرسال</button>
+            </div>
+           </form>
+       
+            </div>
+        </div>
+    </div>
+</section>
+
