@@ -1,0 +1,60 @@
+
+
+.show-case {
+    
+        background-image: url('/assets/huna-ai-logo.png');
+        background-size: 100% 100%; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        object-fit: cover;
+        object-position: cover;
+        min-height: 110vh; 
+        width: 100%;      
+        overflow: hidden;
+    
+       position: relative;
+}
+.show-case::after{
+    content: '';
+    position: absolute;
+    width: 98%;
+    height: 100px;
+    background-color: #ffffff;
+    bottom: 0;
+    right: 0;
+    border-top-left-radius: 66px;
+} 
+
+@media (max-width:992px) {
+    .show-case {
+    
+        background-image: url('/assets/Banner 991.webp');
+        background-size: 100% 100%; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        object-fit: cover;
+        object-position: cover;
+        min-height: 100vh; 
+        width: 100%;      
+        overflow: hidden;
+       
+       position: relative;
+}
+}
+
+@media (max-width:575px) {
+    .show-case {
+    
+        background-image: url('/assets/Banner 478.webp');
+        background-size: 100% 100%; 
+        background-position: center; 
+        background-repeat: no-repeat; 
+        object-fit: cover;
+        object-position: cover;
+        height: 200px; 
+        width: 100%;      
+        overflow: hidden;
+      
+       position: relative;
+}
+}

@@ -1,0 +1,55 @@
+.content-container {
+    text-align: center; /* Centers the text */
+    max-width: 600px; /* Maximum width of the content area */
+    margin: auto; /* Centers the content container */
+    padding: 20px; /* Padding around the content */
+  }
+  .text{
+    font-size: 16px;
+    font-family: 500;
+    white-space: wrap;
+    width: 100%;
+  }
+  h1, h2 {
+    color: #333; /* Dark text color */
+    margin: 10px 0; /* Space above and below the headers */
+  }
+  
+  p {
+    color: #666; /* Lighter text color for the paragraph */
+    margin-bottom: 20px; /* Space below the paragraph */
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-around; /* Distributes buttons evenly */
+    margin-top: 20px; /* Space above the button container */
+  }
+ 
+
+  .btn-bg{
+    --bs-btn-color: black;
+    --bs-btn-bg: #f3daa2;
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: #f3daa2;
+    font-weight: bold;
+    padding: 14px 25px;
+    border-radius: 16px;
+    }
+    .btn-border{
+      --bs-btn-color: black;
+      --bs-btn-bg: #fff;
+      --bs-btn-border-color: #f3daa2;
+      --bs-btn-hover-color: black;
+      --bs-btn-hover-bg: none;
+      --bs-btn-hover-border-color: #f3daa2;
+      font-weight: bold;
+      padding: 14px 25px;
+      border-radius: 16px;
+      }
+      h2[_ngcontent-ng-c658164294] {
+        color: #333;
+        margin: 10px 0;
+        font-weight: 600;
+    }

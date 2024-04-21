@@ -1,0 +1,91 @@
+.nav-bar{
+   font-family: "Noto Kufi Arabic", sans-serif;
+    ;
+    font-weight: 600;
+    
+
+}
+.btn-bg{
+--bs-btn-color: black;
+--bs-btn-bg: #f3daa2;
+--bs-btn-border-color: none;
+--bs-btn-hover-color: black;
+--bs-btn-hover-bg: #f3daa2;
+font-weight: bold;
+padding: 14px 18px;
+border-radius: 16px;
+}
+.logo{
+    width: 113px;
+    height: 56px;
+    
+} 
+@media (max-width:991px) {
+    .navbar-nav{
+        background-color: #fff;
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 5px;
+    }
+    .nav-link{
+        padding: 5px 35px;
+        font-size: 20px;
+    }
+    
+}
+/*   */
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8c9da2; 
+    padding: 10px;
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    max-height: auto;
+    min-height: 4rem;
+  }
+  
+  nav ul {
+    list-style: none;
+      padding: 0;
+      display: flex;
+  }
+  
+  
+  li {
+    margin: 0 10px; 
+  }
+  
+  nav li:last-child {
+    border-right: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: white; 
+    color: #F8991F;
+  }
+  
+  .icon {
+    display: none;
+  } 
+  
+  
+  
+  /* Hide the hamburger menu icon on larger screens */
+ /* navbar.component.css */

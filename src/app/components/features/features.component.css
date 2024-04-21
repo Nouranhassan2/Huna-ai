@@ -1,0 +1,28 @@
+/* You can add card-specific styles here */
+.card {
+    /* Optional: define a max width for the cards for better control on large screens */
+    max-width: 370px;
+    height: 254px;
+    margin: 0 auto; /* Centers card in column when it's smaller than the max-width */
+  }
+ .card-title{
+    font-size: 24px;
+ }
+  .card-header {
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    margin-bottom: 0;
+    color: var(--bs-card-cap-color);
+    background-color: #fff;
+    border-bottom:none;
+}
+.card-footer {
+    padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+    color: var(--bs-card-cap-color);
+    background-color:#fff;
+    border-top:none;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem 0;
+    color: var(--bs-card-color);
+}

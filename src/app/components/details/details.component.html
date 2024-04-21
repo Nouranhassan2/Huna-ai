@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body class="min-vh-100 bg-black text-white">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="w-100 h-50">{{ toolInfo[0]?.Name }}</div>
+        <div class="w-100 h-50">{{ toolInfo[0]?.Category }}</div>
+        <iframe
+          [src]="toolInfo[0]?.InstructionalVideoURL"
+          width="560"
+          height="315"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>

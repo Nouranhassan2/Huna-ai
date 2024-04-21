@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+/* In styles.css or styles.scss */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body{
+    font-family: "Noto Kufi Arabic", sans-serif;
+
+}
+.w-90{
+    width: 90%;
+}
+.my-6 {
+    margin-top: 5.5rem !important;
+    margin-bottom: 5.5rem !important;
+  }
+  
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.btn-bg{
+--bs-btn-color: black;
+--bs-btn-bg: #f3daa2;
+--bs-btn-border-color: none;
+--bs-btn-hover-color: black;
+--bs-btn-hover-bg: #f3daa2;
+font-weight: bold;
+padding: 14px 18px;
+border-radius: 16px;
+}
