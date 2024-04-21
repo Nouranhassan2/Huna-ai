@@ -11,11 +11,11 @@
 --bs-btn-bg: #f3daa2;
 --bs-btn-border-color: none;
 --bs-btn-hover-color: black;
---bs-btn-hover-bg: #f3daa2;
+--bs-btn-hover-bg: #f1cc7b;
 font-weight: bold;
 padding: 16px 20px;
 border-radius: 16px;
-font-size: 12px;
+font-size: 14px;
 
 }
 .logo{
