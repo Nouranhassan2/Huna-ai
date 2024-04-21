@@ -17,12 +17,15 @@
 .show-case::after{
     content: '';
     position: absolute;
-    width: 98%;
+    width: 100%;
+    
     height: 100px;
     background-color: var(--50, #EFF6FF);
     bottom: 0;
     right: 0;
     border-top-left-radius: 66px;
+    border-top-right-radius: 66px;
+
 } 
 
 @media (max-width:992px) {
