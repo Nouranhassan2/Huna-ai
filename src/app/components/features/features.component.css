@@ -2,7 +2,7 @@
 .card {
     /* Optional: define a max width for the cards for better control on large screens */
     max-width: 370px;
-    height: 254px;
+   min-height: 254px; 
     margin: 0 auto; 
     ;
  background-color: var(--50, #EFF6FF);;
