@@ -8,7 +8,7 @@
         background-repeat: no-repeat; 
         object-fit: cover;
         object-position: cover;
-        min-height: 110vh; 
+        min-height: 100vh; 
         width: 100%;      
         overflow: hidden;
     
@@ -48,13 +48,13 @@
 @media (max-width:575px) {
     .show-case {
     
-        background-image: url('/assets/Banner 478.webp');
+        background-image: url('/assets/Banner 478 + opacity (224 h).png');
         background-size: 100% 100%; 
         background-position: center; 
         background-repeat: no-repeat; 
-        object-fit: cover;
-        object-position: cover;
-        height: 200px; 
+        object-fit: contain;
+        /* object-position: cover; */
+        max-height: 50vh;
         width: 100%;      
         overflow: hidden;
       
