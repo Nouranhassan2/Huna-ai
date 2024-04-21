@@ -8,7 +8,6 @@
         background-repeat: no-repeat; 
         object-fit: cover;
         object-position: cover;
-        min-height: 100vh; 
         width: 100%;      
         overflow: hidden;
     
@@ -48,16 +47,14 @@
 @media (max-width:575px) {
     .show-case {
     
-        background-image: url('/assets/Banner.png');
-        background-size: 100% 100%; 
-        background-position: center; 
-        background-repeat: no-repeat; 
+        background-image: url(/assets/Banner.png);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
         object-fit: contain;
-        /* object-position: cover; */
-        max-height: 50vh;
-        width: 100%;      
+        width: 100%;
+        min-height: 70vh;
         overflow: hidden;
-      
-       position: relative;
+        position: relative;
 }
 }
