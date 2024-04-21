@@ -36,6 +36,24 @@ font-size: 14px;
     }
     
 }
+@media (max-width: 991px){
+.navbar-nav[_ngcontent-ng-c2540533267] {
+  background-color: #fff;
+  width: 50%;
+  border-radius: 15px;
+  margin-top: 5px;
+  align-items: end;
+}
+}
+@media (max-width: 472px){
+  .navbar-nav[_ngcontent-ng-c2540533267] {
+    background-color: #fff;
+    width: 88%;
+    border-radius: 15px;
+    margin-top: 5px;
+    align-items: end;
+  }
+  }
 /*   */
 /* nav {
     display: flex;
