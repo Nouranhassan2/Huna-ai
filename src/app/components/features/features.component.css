@@ -1,7 +1,11 @@
 /* You can add card-specific styles here */
+.cards{
+    width: 50%;
+    margin-inline: auto;
+}
 .card {
     /* Optional: define a max width for the cards for better control on large screens */
-    max-width: 370px;
+    max-width: 100%;
    min-height: 254px; 
     margin: 0px; 
     ;
@@ -33,3 +37,23 @@ overflow: hidden;
 font-size: 16px;
 }
 
+@media(max-width:1940px){
+    .cards{
+        width: 65%;
+        margin-inline: auto;
+    }
+}
+@media(max-width:1200px){
+    .cards{
+        width: 75%;
+        margin-inline: auto;
+    }
+}
+@media(max-width:768px){
+    .cards{
+        width: 70%;
+    }
+    .card{
+        width: 100%;
+    }
+}
