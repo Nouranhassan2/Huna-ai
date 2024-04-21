@@ -23,7 +23,7 @@
     margin: 40px auto; /* Space above and below the headers */
     font-size: 36px;
     font-weight: 800;
-    max-width:700px ;
+    max-width:570px ;
   }
   
   
@@ -59,4 +59,5 @@
       font-weight: bold;
       padding: 14px 25px;
       border-radius: 16px;
+      font-size: 12px;
       }
