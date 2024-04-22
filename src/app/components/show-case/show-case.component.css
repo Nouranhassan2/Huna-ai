@@ -47,13 +47,42 @@
 @media (max-width:575px) {
     .show-case {
     
-        background-image: url(/assets/Banner.png);
+        background-image: url(/assets/Banner478.webp);
         background-size: 100% 100%;
         background-position: center;
         background-repeat: no-repeat;
         object-fit: contain;
         width: 100%;
         min-height: 65vh;
+        overflow: hidden;
+        position: relative;
+}
+}
+
+@media (min-width:573px) {
+    .show-case {
+    
+        background-image: url(/assets/huna-ai-logo.png);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: contain;
+        width: 100%;
+        min-height: 70vh;
+        overflow: hidden;
+        position: relative;
+}
+}
+@media (min-width:1200px) {
+    .show-case {
+    
+        background-image: url(/assets/huna-ai-logo.png);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: contain;
+        width: 100%;
+        min-height: 88vh;
         overflow: hidden;
         position: relative;
 }
