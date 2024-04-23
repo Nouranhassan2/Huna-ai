@@ -8,7 +8,7 @@ text-align: center;
     background: var(--50, #EFF6FF);
 }
 .text-color{
-    background-color: #F3DAA2;
+    background: var(--Secondary, #557481);
 }
 
 .row {
