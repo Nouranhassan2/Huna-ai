@@ -1,0 +1,51 @@
+
+<section>
+  <app-navbar></app-navbar>
+</section>
+
+
+
+<section class="container py-4 ">
+  <div class="text d-flex justify-content-center my-6 ">
+    <h1 class="mb-5 ">
+   تلقينات الذكاء الاصطناعى
+   </h1>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+    <!-- Use *ngFor to loop through categories if they are dynamic -->
+    <div class="col" *ngFor="let category of CatList">
+      <div class="card h-100 text-end">
+        <div class="card-body">
+          <h5 class="card-title text-dark pb-4">{{ category }}</h5>
+        </div>
+        <div class="d-flex justify-content-end me-3">
+        <button class="btn btn-border " dir="rtl" (click)="selectCategory(category)"> استكشف التلقينات
+             
+        </button>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <app-footer></app-footer>
+</section>
+<!-- <section class="container py-4 prompts">
+<div class="text d-flex justify-content-center my-5">
+   <h1>
+  تلقينات الذكاء الاصطناعى
+  </h1>
+</div>
+         <div class="row gy-4">
+            <div class=" mx-1 my-1 border border-1 " *ngFor="let category of CatList" class="col-lg-4" (click)="selectCategory(category)"> {{category}}
+             
+            </div>
+        </div>
+
+        <div class="prompts">
+            <div *ngFor="let prompt of prompts">
+              <p>{{ prompt.title }}</p>
+            </div>
+          </div>
+
+  </section> -->

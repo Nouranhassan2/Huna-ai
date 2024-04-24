@@ -4,11 +4,14 @@ import { HomeComponent } from './components/home/home.component';
 import { DetailsComponent } from './components/details/details.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { ShowCaseComponent } from './components/show-case/show-case.component';
+import { PromptsComponent } from './components/prompts/prompts.component';
 
 const routes: Routes = [
   { path: '', component: ShowCaseComponent },
 
   { path: 'toolDetails/:id', component: DetailsComponent },
+  { path: 'prompts', component: PromptsComponent },
+
 
   { path: 'home', component: HomeComponent },
   { path: '**', component: NotfoundComponent },
