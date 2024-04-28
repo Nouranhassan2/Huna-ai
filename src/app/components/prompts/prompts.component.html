@@ -19,7 +19,7 @@
           <h5 class="card-title text-dark pb-4">{{ category }}</h5>
         </div>
         <div class="d-flex justify-content-end me-3">
-        <button class="btn btn-border " dir="rtl" (click)="selectCategory(category)"> استكشف التلقينات
+        <button class="btn btn-border " dir="rtl" (click)="selectCategory(category)" routerLink="/currentPrompts" > استكشف التلقينات
              
         </button>
       </div>
@@ -27,6 +27,25 @@
     </div>
   </div>
 </section>
+
+<!-- prompts.component.html -->
+<div *ngFor="let prompt of prompts">
+  <h3>{{ prompt.QuestionText }}</h3>
+  <p *ngIf="prompt.Prompt1">Prompt1: {{ prompt.Prompt1 }}</p>
+  <p *ngIf="prompt.Prompt2">Prompt2: {{ prompt.Prompt2 }}</p>
+  <!-- Add similar lines for Prompt3 to Prompt10 -->
+</div>
+
+<!-- <div class="container mt-4" *ngIf="prompts.length > 0">
+  <h2>التلقينات للفئة: {{ selectedCategory }}</h2>
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let prompt of prompts">
+      {{ prompt }}
+    </li>
+  </ul>
+</div> -->
+
+
 <section>
   <app-footer></app-footer>
 </section>

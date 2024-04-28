@@ -1,0 +1,8 @@
+.bi-copy {
+    color: #000; /* Bootstrap primary color */
+    cursor: pointer;
+  }
+  
+  .bi-copy:hover {
+    color: #0a58ca;
+  }

@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 import { Prompts } from './prompts';
+import { CurrentPrompts } from './current-prompts';
 
 @Injectable({
   providedIn: 'root',
@@ -20,7 +21,10 @@ export class ToolsService {
   getCategories(): Observable<any> {
     return this._http.get('http://localhost:5000/categories');
   }
-  getPromptsByCategory(category: string): Observable<any> {  // Adjust the return type based on your data structure
-    return this._http.get(`http://localhost:5000/prompts/category/${category}`);
+
+  getPromptsByCategory(category: string): Observable<any> {
+    return this._http.get<CurrentPrompts[]>(`http://localhost:5000/prompts/category/${category}`).pipe(
+      tap(data => console.log('API Response:', data))
+    );
   }
 }

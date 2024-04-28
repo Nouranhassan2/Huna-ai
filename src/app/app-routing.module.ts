@@ -1,3 +1,4 @@
+import { CurrentPromptComponent } from './components/current-prompt/current-prompt.component';
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
@@ -12,7 +13,7 @@ const routes: Routes = [
   { path: 'toolDetails/:id', component: DetailsComponent },
   { path: 'prompts', component: PromptsComponent },
 
-
+  { path:'currentPrompts',component:CurrentPromptComponent},
   { path: 'home', component: HomeComponent },
   { path: '**', component: NotfoundComponent },
 ];
