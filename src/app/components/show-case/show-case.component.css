@@ -2,7 +2,7 @@
 
 .show-case {
     
-        background-image: url('/assets/huna-ai-logo.png');
+        /* background-image: url('/assets/huna-ai-logo.png'); */
         background-size: 100% 100%; 
         background-position: center; 
         background-repeat: no-repeat; 
@@ -10,9 +10,10 @@
         object-position: cover;
         width: 100%;      
         overflow: hidden;
-        min-height: 65vh;
+        max-height: 110vh;
         position: relative;
 }
+
 .show-case::after{
     content: '';
     position: absolute;
@@ -59,7 +60,7 @@
 }
 }
 
-@media (min-width:573px) {
+@media (max-width:573px) {
     .show-case {
     
         background-image: url(/assets/huna-ai-logo.png);
@@ -73,7 +74,7 @@
         position: relative;
 }
 }
-@media (min-width:1200px) {
+@media (max-width:1200px) {
     .show-case {
     
         background-image: url(/assets/huna-ai-logo.png);

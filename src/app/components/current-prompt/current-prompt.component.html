@@ -9,39 +9,7 @@
     </div>
 
 
-<!-- 
-    <div class="row g-4 mt-5 ">
-        <div class="col-md-12" *ngFor="let prompt of prompts">
-          <div class="card h-100 text-end">
-            <div class="card-body">
-                <h3>{{ prompt.QuestionText }}</h3>
-                <p *ngIf="prompt.Prompt1">{{ prompt.Prompt1 }}</p>
-                <p *ngIf="prompt.Prompt2">{{ prompt.Prompt2 }}</p>
-                <p *ngIf="prompt.Prompt2">{{ prompt.Prompt3 }}</p>
 
-
-
-            </div>
-        
-          </div>
-        </div>
-      </div> -->
-
-<!-- 
-
-      <div  *ngFor="let prompt of prompts" class="d-flex justify-content-between" dir="rtl">
-        <p id="textToCopy" *ngIf="prompt.Prompt1">{{ prompt.Prompt1 }}</p>
-        <i class="bi bi-copy mx-2" (click)="copyText()" style="cursor: pointer;"  dir="rtl"></i>
-      </div>
-      <div  *ngFor="let prompt of prompts" class="d-flex justify-content-between"  dir="rtl">
-        <p id="textToCopy" *ngIf="prompt.Prompt2">{{ prompt.Prompt2 }}</p>
-        <i class="bi bi-copy mx-2" (click)="copyText()" style="cursor: pointer;"></i>
-      </div>
-
-      <div  *ngFor="let prompt of prompts" class="d-flex justify-content-between"  dir="rtl">
-        <p id="textToCopy" *ngIf="prompt.Prompt2">{{ prompt.Prompt3 }}</p>
-        <i class="bi bi-copy mx-2" (click)="copyText()" style="cursor: pointer;"></i>
-      </div> -->
 <div class="row g-4 mt-5">
       <div *ngFor="let prompt of prompts" class="col-md-12 d-flex justify-content-between"  dir="rtl">
         <div class="card h-100 text-end w-100">
@@ -91,3 +59,41 @@
 <section>
     <app-footer></app-footer>
 </section>
+
+
+
+
+
+<!-- 
+    <div class="row g-4 mt-5 ">
+        <div class="col-md-12" *ngFor="let prompt of prompts">
+          <div class="card h-100 text-end">
+            <div class="card-body">
+                <h3>{{ prompt.QuestionText }}</h3>
+                <p *ngIf="prompt.Prompt1">{{ prompt.Prompt1 }}</p>
+                <p *ngIf="prompt.Prompt2">{{ prompt.Prompt2 }}</p>
+                <p *ngIf="prompt.Prompt2">{{ prompt.Prompt3 }}</p>
+
+
+
+            </div>
+        
+          </div>
+        </div>
+      </div> -->
+
+<!-- 
+
+      <div  *ngFor="let prompt of prompts" class="d-flex justify-content-between" dir="rtl">
+        <p id="textToCopy" *ngIf="prompt.Prompt1">{{ prompt.Prompt1 }}</p>
+        <i class="bi bi-copy mx-2" (click)="copyText()" style="cursor: pointer;"  dir="rtl"></i>
+      </div>
+      <div  *ngFor="let prompt of prompts" class="d-flex justify-content-between"  dir="rtl">
+        <p id="textToCopy" *ngIf="prompt.Prompt2">{{ prompt.Prompt2 }}</p>
+        <i class="bi bi-copy mx-2" (click)="copyText()" style="cursor: pointer;"></i>
+      </div>
+
+      <div  *ngFor="let prompt of prompts" class="d-flex justify-content-between"  dir="rtl">
+        <p id="textToCopy" *ngIf="prompt.Prompt2">{{ prompt.Prompt3 }}</p>
+        <i class="bi bi-copy mx-2" (click)="copyText()" style="cursor: pointer;"></i>
+      </div> -->
