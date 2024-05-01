@@ -6,4 +6,6 @@ export interface Tools {
   PricingModal: string;
   SupportedLanguages: string;
   ToolID: number;
+  ImageURL:string;
+  LinkURL:string;
 }

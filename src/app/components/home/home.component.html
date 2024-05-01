@@ -21,31 +21,36 @@
         </select>
       </div>
      </div>
-    <div class="col-md-9 mt-0">
-      <!-- <input
-        type="search"
-        class="form-cn mb-4 "
-        placeholder="ابحث عن أداة .."
-        dir="rtl"
-      /> -->
-
-      <div class="input-group mb-3">
-        <span class="input-group-text">@</span>
-        <div class="form-floating">
-          <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
-          <label for="floatingInputGroup1">Username</label>
-        </div>
+     <div class="col-md-9 mt-0 search-input-container">
+      <div class="input-group">
+        <input type="search" class="form-control mb-4" placeholder="ابحث عن أداة .." dir="rtl">
+    
       </div>
     </div>
 
    </div>
-      <div class="row gy-4">
-        <div *ngFor="let item of toolList" class="col-md-6">
+      <div class="row g-4 ">
+        <div *ngFor="let item of toolList" class="col-lg-4 ">
           <div
-            [routerLink]="['/toolDetails', item.ToolID]"
-            class="card text-dark h-100"
+            class="card text-dark  w-100 "
           >
-            <h3>toolId: {{ item?.ToolID }}</h3>
+           
+          <div class="d-flex justify-content-between flex-row-reverse">
+          <div class="text " dir="rtl">
+            <h4> {{ item.Name }}</h4>
+             <p class="overflow-hidden " style="height: 77px;">{{ item?.Details }}</p>
+
+          </div>
+          <div class="image" style="width: 100% ; height: 96px;">
+            <img [src]="item.ImageURL" class="w-100 h-100" alt="">
+          </div>
+        </div>
+        <div class="Button-center">
+          <button class="btn btn-tools ms-0" [routerLink]="['/toolDetails', item.ToolID]"
+          >استكشف الأداة</button>
+        </div>
+<!-- 
+           <h4>toolId: {{ item?.ToolID }}</h4>
             <p>{{ item?.Category }}</p>
             <p>{{ item?.Details }}</p>
 
@@ -57,8 +62,9 @@
                 class="btn btn-primary mt-3"
                 >Visit
               </a>
-            </div>
+            </div> -->
           </div>
+
         </div>
       </div>
 

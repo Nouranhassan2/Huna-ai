@@ -18,8 +18,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PromptsComponent } from './components/prompts/prompts.component';
 import { CurrentPromptComponent } from './components/current-prompt/current-prompt.component';
+import { SafeURLPipe } from './safe-url.pipe';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, DetailsComponent, NotfoundComponent, NavbarComponent, ShowCaseComponent, HeroComponent, FeaturesComponent, AboutUsComponent, FooterComponent, PromptsComponent, CurrentPromptComponent],
+  declarations: [AppComponent, HomeComponent, DetailsComponent, NotfoundComponent, NavbarComponent, ShowCaseComponent, HeroComponent, FeaturesComponent, AboutUsComponent, FooterComponent, PromptsComponent, CurrentPromptComponent, SafeURLPipe],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule,ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],

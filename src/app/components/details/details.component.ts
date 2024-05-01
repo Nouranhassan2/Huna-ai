@@ -16,13 +16,14 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit(): void {
     let x = this._Activated.snapshot.params['id'];
-
+  
     this._service.toolDetails(x).subscribe({
       next: (response) => {
         this.toolInfo = response.tools;
+        console.log("Loaded tool info:", this.toolInfo);
       },
       error: (err) => {
-        console.log(err);
+        console.error("Failed to load tool details:", err);
       },
     });
   }
