@@ -10,7 +10,7 @@
             <p class="card-text ">{{ card.description }}</p>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-bg mb-2" routerLink="prompts">{{ card.buttonText }}</a>
+            <a  class="btn btn-bg mb-2" [routerLink]="card.link">{{ card.buttonText }}</a>
           </div>
         </div>
       </div>

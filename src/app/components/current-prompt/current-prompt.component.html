@@ -1,69 +1,42 @@
 <section>
-    <app-navbar></app-navbar>
+  <app-navbar></app-navbar>
 </section>
-
-<section class="my-3 ">
+<section class="my-3">
   <div class="bg-main">
     <div class="toolsLink d-flex pt-5 pe-5" dir="rtl" routerLink="/prompts">
-    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
-      <path d="M1 17L9 9L1 1" stroke="#557481" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    <p class="me-2 text-muted fs-6 ">الرجوع لصفحة التلفينات</p>
-  </div>
-    <div class="d-flex justify-content-end me-5 " >
-        <h2 class="fs-2 mt-5 pt-5" > تلقينات {{ selectedCategory  }} </h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" viewBox="0 0 10 18" fill="none">
+        <path d="M1 17L9 9L1 1" stroke="#557481" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p class="me-2 text-muted fs-6 ">الرجوع لصفحة التلفينات</p>
+    </div>
+    <div class="d-flex justify-content-end me-5">
+      <h2 class="fs-4 mt-5 pt-5">تلقينات {{ selectedCategory }}</h2>
     </div>
   </div>
 
-
-<div class="row g-4 mt-5">
-      <div *ngFor="let prompt of prompts" class="col-md-12 d-flex justify-content-between"  dir="rtl">
-        <div class="card h-100 text-end w-100">
-          <div class="card-body">
-
-
-        <h3>{{ prompt.QuestionText }}</h3>
-
-      <div class="d-flex justify-content-between" *ngIf="prompt.Prompt1">
-        <p id="textToCopy" >{{ prompt.Prompt1 }}</p>
-
-        <i class="bi bi-copy" (click)="copyText()" style="cursor: pointer;"></i>
+  <div class="row g-4 mt-5 w-90 mx-auto">
+    <div *ngFor="let prompt of prompts" class="col-md-12 d-flex justify-content-between" dir="rtl">
+      <div class="card h-100 text-end w-100">
+        <div class="card-body">
+         <div class="d-flex justify-content-between">
+          <h5  class="mt-1 mb-2">{{ prompt.QuestionText }} </h5>
+          <i (click)="togglePrompt(prompt.QuestionID)" class="bi bi-chevron-down"></i>
+         </div>
+          <div *ngIf="expandedStates.get(prompt.QuestionID)">
+            <!-- All prompts details here -->
+            <div class="" *ngIf="prompt.Prompt1">
+              <p id="textToCopy">{{ prompt.Prompt1 }}</p>
+              <i class="bi bi-copy " (click)="copyText()" style="cursor: pointer;"></i>
+            </div>
+            <!-- Repeat for other prompts as needed -->
+          </div>
+        </div>
       </div>
-
-      <div class="d-flex justify-content-between" *ngIf="prompt.Prompt2">
-        <p id="textToCopy" >{{ prompt.Prompt2 }}</p>
-
-        <i class="bi bi-copy" (click)="copyText()" style="cursor: pointer;"></i>
-      </div>
-
-
-      <div class="d-flex justify-content-between"  *ngIf="prompt.Prompt3">
-        <p id="textToCopy">{{ prompt.Prompt3 }}</p>
-
-        <i class="bi bi-copy" (click)="copyText()" style="cursor: pointer;"></i>
-      </div>
-
-      <div class="d-flex justify-content-between"  *ngIf="prompt.Prompt4">
-        <p id="textToCopy">{{ prompt.Prompt4 }}</p>
-
-        <i class="bi bi-copy" (click)="copyText()" style="cursor: pointer;"></i>
-      </div>
-      <div class="d-flex justify-content-between"  *ngIf="prompt.Prompt5">
-        <p id="textToCopy">{{ prompt.Prompt5 }}</p>
-
-        <i class="bi bi-copy" (click)="copyText()" style="cursor: pointer;"></i>
-      </div>
-      </div>
-
     </div>
-      </div>
-      <!-- <span *ngIf="showCopyMessage" class="copy-message d-flex justify-content-center align-items-center">Text copied to clipboard</span> -->
-
-</div>
+  </div>
 </section>
-
 <section>
-    <app-footer></app-footer>
+  <app-footer></app-footer>
 </section>
 
 
