@@ -14,16 +14,22 @@
   <div class="row justify-content-center align-items-center">
     <div class="col-md-3 mt-0 mb-4">
       <div class="filter-section text-end" >
-        <select #filterSelect class="btn btn-second" dir="rtl">
+        <select #filterSelect class="btn btn-second" (change)="selectCategory(filterSelect.value)" dir="rtl">
           <option value="" disabled selected>تصنيف حسب</option>
-          <option value="By Order">By Order</option>
-          <option value="Made in Saudi">Made in Saudi</option>
+          <option value="التصميم">التصميم</option>
+          <option value="البرمجة">البرمجة</option>
+          <option value="المحتوى">المحتوى</option>
+          <option value="فيديو">فيديو</option>
+          <option value="أوديو">أوديو</option>
+          <option value="الاختبار">الاختبار</option>
+          <option value="مولد مطالبات"> مولد مطالبات</option>
+          <option value="مكتبات الذكاء الاصطناعى">مكتبات الذكاء الاصطناعى</option>
         </select>
       </div>
      </div>
      <div class="col-md-9 mt-0 search-input-container">
       <div class="input-group">
-        <input type="search" class="form-control mb-4" placeholder="ابحث عن أداة .." dir="rtl">
+        <input type="search" class="form-control mb-4" [(ngModel)]="searchQuery" (keyup)="onSearch()" placeholder="ابحث عن أداة .." dir="rtl">
     
       </div>
     </div>
@@ -35,34 +41,23 @@
             class="card text-dark  w-100 "
           >
            
-          <div class="d-flex justify-content-between flex-row-reverse">
-          <div class="text " dir="rtl">
+          <div class="d-flex  justify-content-between flex-row-reverse">
+          <div class="text w-100 ms-2" dir="rtl">
             <h4> {{ item.Name }}</h4>
-             <p class="overflow-hidden " style="height: 77px;">{{ item?.Details }}</p>
+             <p class="overflow-hidden " style="height: 77px; width:100%;">{{ item?.Details }}</p>
 
-          </div>
-          <div class="image" style="width: 100% ; height: 96px;">
+          </div> 
+
+          <div class="image  w-100" style="width: 120px ; height: 96px;">
             <img [src]="item.ImageURL" class="w-100 h-100" alt="">
-          </div>
+          </div> 
+
         </div>
         <div class="Button-center">
           <button class="btn btn-tools ms-0" [routerLink]="['/toolDetails', item.ToolID]"
           >استكشف الأداة</button>
         </div>
-<!-- 
-           <h4>toolId: {{ item?.ToolID }}</h4>
-            <p>{{ item?.Category }}</p>
-            <p>{{ item?.Details }}</p>
 
-            <div class="card-body">
-              <h5 class="card-title">Tool Name: {{ item.Name }}</h5>
-              <a
-                [href]="item?.InstructionalVideoURL"
-                target="_blank"
-                class="btn btn-primary mt-3"
-                >Visit
-              </a>
-            </div> -->
           </div>
 
         </div>

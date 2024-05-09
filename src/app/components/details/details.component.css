@@ -18,3 +18,9 @@
 .toolsLink{
     cursor: pointer;
 }
+.color-red{
+    color: #CE1312;
+}
+.bg-main{
+    background-color:  #D9D9D9;;
+}

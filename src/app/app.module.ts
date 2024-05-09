@@ -15,13 +15,15 @@ import { FeaturesComponent } from './components/features/features.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PromptsComponent } from './components/prompts/prompts.component';
 import { CurrentPromptComponent } from './components/current-prompt/current-prompt.component';
 import { SafeURLPipe } from './safe-url.pipe';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, DetailsComponent, NotfoundComponent, NavbarComponent, ShowCaseComponent, HeroComponent, FeaturesComponent, AboutUsComponent, FooterComponent, PromptsComponent, CurrentPromptComponent, SafeURLPipe],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule,ReactiveFormsModule],
+  declarations: [AppComponent, HomeComponent, DetailsComponent, NotfoundComponent, NavbarComponent, ShowCaseComponent, HeroComponent, FeaturesComponent, AboutUsComponent, FooterComponent, PromptsComponent, CurrentPromptComponent, SafeURLPipe, SignUpComponent],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule,ReactiveFormsModule,FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

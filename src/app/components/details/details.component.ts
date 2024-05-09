@@ -1,3 +1,4 @@
+import { Tools } from './../../tools';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ToolsService } from 'src/app/tools.service';

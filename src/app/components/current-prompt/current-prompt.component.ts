@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { ChangeDetectorRef, Component, Input } from '@angular/core';
 import { CurrentPrompts } from 'src/app/current-prompts';
 import { PromptShareServiceService } from 'src/app/prompt-share-service.service';
 import { ToolsService } from 'src/app/tools.service';
@@ -11,7 +11,8 @@ import { ToolsService } from 'src/app/tools.service';
 })
 export class CurrentPromptComponent {
   showCopyMessage: boolean = false;
-
+  @Input()
+  imagesList!: string[];
   prompts: CurrentPrompts[] = [];
   selectedCategory:string=''
 

@@ -27,4 +27,16 @@ export class ToolsService {
       tap(data => console.log('API Response:', data))
     );
   }
+
+
+  
+  getFilteredTools(category: string): Observable<any> {
+    const encodedCategory = encodeURIComponent(category);
+    console.log("Encoded category:", encodedCategory);
+    return this._http.get<any>(`http://127.0.0.1:5000/categoryName=${encodedCategory}`);
+  }
+
+  searchToolsByName(name: string): Observable<any> {
+    return this._http.get<any>(`http://127.0.0.1:5000/Name=${encodeURIComponent(name)}`);
+  }
 }

@@ -93,3 +93,9 @@ a {
   }
   
 }
+.image img {
+  max-width: 120px;
+  height: auto; /* Adjust height as necessary */
+  position: relative;
+  left: -10%; /* Adjust this value to center the image if it's zoomed in */
+}

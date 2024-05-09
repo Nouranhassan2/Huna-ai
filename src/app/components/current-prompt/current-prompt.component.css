@@ -6,3 +6,22 @@
   .bi-copy:hover {
     color: #0a58ca;
   }
+  .toolsLink{
+    cursor: pointer;
+}
+.bg-main{
+  background-image:url('/assets/all.webp') ;
+  height: 40vh;
+  background-size: cover;
+
+}
+@media (max-width:992px){
+  .bg-main{
+    background-image:url('/assets/all991.webp') ;
+  }
+}
+@media (max-width:500px){
+  .bg-main{
+    background-image:url('/assets/all478.webp') ;
+  }
+}
