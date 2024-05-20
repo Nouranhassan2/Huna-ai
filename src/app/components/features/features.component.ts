@@ -13,6 +13,7 @@ export class FeaturesComponent {
       title: 'مقالات',
       description: 'لإثراء معلوماتك عن الذكاء الاصطناعي وكل جديد فيه، يمكنك قراءة مقالاتنا عن كيفية استخدام الذكاء وفائدته لمجتمعنا.',
       buttonText: 'اطلع على المقالات',
+      link:"/news"
     },
     {
       icon: 'assets/card2.svg',

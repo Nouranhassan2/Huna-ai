@@ -20,8 +20,10 @@ import { PromptsComponent } from './components/prompts/prompts.component';
 import { CurrentPromptComponent } from './components/current-prompt/current-prompt.component';
 import { SafeURLPipe } from './safe-url.pipe';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { NewsComponent } from './components/news/news.component';
+import { NewsDetailsComponent } from './components/news-details/news-details.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, DetailsComponent, NotfoundComponent, NavbarComponent, ShowCaseComponent, HeroComponent, FeaturesComponent, AboutUsComponent, FooterComponent, PromptsComponent, CurrentPromptComponent, SafeURLPipe, SignUpComponent],
+  declarations: [AppComponent, HomeComponent, DetailsComponent, NotfoundComponent, NavbarComponent, ShowCaseComponent, HeroComponent, FeaturesComponent, AboutUsComponent, FooterComponent, PromptsComponent, CurrentPromptComponent, SafeURLPipe, SignUpComponent, NewsComponent, NewsDetailsComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule,ReactiveFormsModule,FormsModule
   ],
   providers: [],

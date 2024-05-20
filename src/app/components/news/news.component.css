@@ -1,0 +1,9 @@
+.w-fit{
+    width: fit-content ;
+}
+.bg-main{
+    background-color: rgba(85, 116, 129, 0.60);
+}
+.cursor-pointer{
+    cursor: pointer;
+}

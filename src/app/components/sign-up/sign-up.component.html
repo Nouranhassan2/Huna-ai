@@ -1,132 +1,142 @@
-<!-- <div class="container">
-    <h1>Sign Up</h1>
-    <form (ngSubmit)="handleSignUp()" [formGroup]="SignupForm">
-      <label for="FirstName">FirstName</label>
-      <input type="text" class="form-control" id="FirstName" formControlName="firstName" />
-  
-      <div
-        *ngIf="SignupForm.get('firstName')?.errors && (SignupForm.get('firstName')?.touched || clicked)"
-        class="alert alert-danger mt-2"
-      >
-        <p class="m-0" *ngIf="SignupForm.get('firstName')?.getError('required')">
-          name is required
-        </p>
-        <p class="m-0" *ngIf="SignupForm.get('firstName')?.getError('minlength')">
-          minLength is 3 character
-        </p>
-        <p class="m-0" *ngIf="SignupForm.get('firstName')?.getError('maxlength')">
-          maxLength is 10 character
-        </p>
-      </div>
-  
-  
-      <label for="LastName">LastName</label>
-      <input type="text" class="form-control" id="LastName" formControlName="lastName" />
-  
-      <div
-        *ngIf="SignupForm.get('lastName')?.errors && (SignupForm.get('lastName')?.touched || clicked)"
-        class="alert alert-danger mt-2"
-      >
-        <p class="m-0" *ngIf="SignupForm.get('lastName')?.getError('required')">
-          name is required
-        </p>
-        <p class="m-0" *ngIf="SignupForm.get('lastName')?.getError('minlength')">
-          minLength is 3 character
-        </p>
-        <p class="m-0" *ngIf="SignupForm.get('lastName')?.getError('maxlength')">
-          maxLength is 10 character
-        </p>
-      </div>
-  
-  
-      <label for="Username">Username</label>
-      <input type="text" class="form-control" id="Username" formControlName="username" />
-  
-      <div
-        *ngIf="SignupForm.get('username')?.errors && (SignupForm.get('username')?.touched || clicked)"
-        class="alert alert-danger mt-2"
-      >
-        <p class="m-0" *ngIf="SignupForm.get('username')?.getError('required')">
-          name is required
-        </p>
-        <p class="m-0" *ngIf="SignupForm.get('username')?.getError('minlength')">
-          minLength is 3 character
-        </p>
-        <p class="m-0" *ngIf="SignupForm.get('username')?.getError('maxlength')">
-          maxLength is 10 character
-        </p>
-      </div>
-  
-  
-      <label for="PhoneNumber">PhoneNumber</label>
-      <input type="tel" class="form-control" id="PhoneNumber" formControlName="phoneNumber" />
-      <div
-        *ngIf="
-         ( SignupForm.get('phoneNumber')?.touched || clicked)&& SignupForm.get('phoneNumber')?.errors
-        "
-        class="alert alert-danger mt-2"
-      >
-        <p class="m-0" *ngIf="SignupForm.get('phoneNumber')?.getError('required')">
-          phoneNumber is required
-        </p>
-        <p class="m-0" *ngIf="SignupForm.get('phoneNumber')?.getError('pattern')">
-          PhoneNumber is invalid
-        </p>
-      </div>
-  
-  
-      <label for="email">email</label>
-      <input
-        type="email"
-        class="form-control"
-        id="email"
-        formControlName="email"
-      />
-  
-      <div
-        *ngIf="
-         SignupForm.get('email')?.errors &&(SignupForm.get('email')?.touched || clicked)  
-        "
-        class="alert alert-danger mt-2"
-      >
-        <p class="m-0" *ngIf="SignupForm.get('email')?.getError('required')">
-          email is required
-        </p>
-        <p class="m-0" *ngIf="SignupForm.get('email')?.getError('email')">
-          email is invalid
-        </p>
-      </div>
-  
-      <label for="password">password</label>
-      <input
-        type="password"
-        class="form-control"
-        id="password"
-        formControlName="password"
-      />
-      <div
-        *ngIf="
-         ( SignupForm.get('password')?.touched ||clicked)&&
-          SignupForm.get('password')?.errors
-        "
-        class="alert alert-danger mt-2"
-      >
-        <p class="m-0" *ngIf="SignupForm.get('password')?.getError('required')">
-          password is required
-        </p>
-        <p class="m-0" *ngIf="SignupForm.get('password')?.getError('pattern')">
-          password is invalid
-        </p>
-      </div>
-  
-  
-        
-  
-  
-  
-  
-      <button class="btn btn-success mt-2" [disabled]="!SignupForm.valid" >Signup</button>
-  
-    </form>
-  </div>
-   -->
+<section>
+  <app-navbar></app-navbar>
+</section>
+
+<section class="signUp mt-5" >
+<div class="container">
+  <h1>Sign Up</h1>
+  <form (ngSubmit)="handleSignUp()" [formGroup]="SignupForm">
+    <label for="FirstName">FirstName</label>
+    <input type="text" class="form-control" id="FirstName" formControlName="firstName" />
+
+    <div
+      *ngIf="SignupForm.get('firstName')?.errors && (SignupForm.get('firstName')?.touched || clicked)"
+      class="alert alert-danger mt-2"
+    >
+      <p class="m-0" *ngIf="SignupForm.get('firstName')?.getError('required')">
+        name is required
+      </p>
+      <p class="m-0" *ngIf="SignupForm.get('firstName')?.getError('minlength')">
+        minLength is 3 character
+      </p>
+      <p class="m-0" *ngIf="SignupForm.get('firstName')?.getError('maxlength')">
+        maxLength is 10 character
+      </p>
+    </div>
+
+
+    <label for="LastName">LastName</label>
+    <input type="text" class="form-control" id="LastName" formControlName="lastName" />
+
+    <div
+      *ngIf="SignupForm.get('lastName')?.errors && (SignupForm.get('lastName')?.touched || clicked)"
+      class="alert alert-danger mt-2"
+    >
+      <p class="m-0" *ngIf="SignupForm.get('lastName')?.getError('required')">
+        name is required
+      </p>
+      <p class="m-0" *ngIf="SignupForm.get('lastName')?.getError('minlength')">
+        minLength is 3 character
+      </p>
+      <p class="m-0" *ngIf="SignupForm.get('lastName')?.getError('maxlength')">
+        maxLength is 10 character
+      </p>
+    </div>
+
+
+    <label for="Username">Username</label>
+    <input type="text" class="form-control" id="Username" formControlName="username" />
+
+    <div
+      *ngIf="SignupForm.get('username')?.errors && (SignupForm.get('username')?.touched || clicked)"
+      class="alert alert-danger mt-2"
+    >
+      <p class="m-0" *ngIf="SignupForm.get('username')?.getError('required')">
+        name is required
+      </p>
+      <p class="m-0" *ngIf="SignupForm.get('username')?.getError('minlength')">
+        minLength is 3 character
+      </p>
+      <p class="m-0" *ngIf="SignupForm.get('username')?.getError('maxlength')">
+        maxLength is 10 character
+      </p>
+    </div>
+
+
+    <label for="PhoneNumber">PhoneNumber</label>
+    <input type="tel" class="form-control" id="PhoneNumber" formControlName="phoneNumber" />
+    <div
+      *ngIf="
+       ( SignupForm.get('phoneNumber')?.touched || clicked)&& SignupForm.get('phoneNumber')?.errors
+      "
+      class="alert alert-danger mt-2"
+    >
+      <p class="m-0" *ngIf="SignupForm.get('phoneNumber')?.getError('required')">
+        phoneNumber is required
+      </p>
+      <p class="m-0" *ngIf="SignupForm.get('phoneNumber')?.getError('pattern')">
+        PhoneNumber is invalid
+      </p>
+    </div>
+
+
+    <label for="email">email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      formControlName="email"
+    />
+
+    <div
+      *ngIf="
+       SignupForm.get('email')?.errors &&(SignupForm.get('email')?.touched || clicked)  
+      "
+      class="alert alert-danger mt-2"
+    >
+      <p class="m-0" *ngIf="SignupForm.get('email')?.getError('required')">
+        email is required
+      </p>
+      <p class="m-0" *ngIf="SignupForm.get('email')?.getError('email')">
+        email is invalid
+      </p>
+    </div>
+
+    <label for="password">password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password"
+      formControlName="password"
+    />
+    <div
+      *ngIf="
+       ( SignupForm.get('password')?.touched ||clicked)&&
+        SignupForm.get('password')?.errors
+      "
+      class="alert alert-danger mt-2"
+    >
+      <p class="m-0" *ngIf="SignupForm.get('password')?.getError('required')">
+        password is required
+      </p>
+      <p class="m-0" *ngIf="SignupForm.get('password')?.getError('pattern')">
+        password is invalid
+      </p>
+    </div>
+
+
+      
+
+
+
+
+    <button class="btn btn-success mt-2" [disabled]="!SignupForm.valid" >Signup</button>
+
+  </form>
+</div>
+</section>
+<section>
+  <app-footer>
+
+  </app-footer>
+</section>

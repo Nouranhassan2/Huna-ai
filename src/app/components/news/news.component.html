@@ -1,0 +1,29 @@
+<section>
+    <app-navbar></app-navbar>
+</section>
+<section class="container">
+    <div class="header d-flex mt-5 justify-content-center align-items-center">
+      <h2 class="mx-2">المقالات</h2>
+      <img src="assets/Frame 225.svg" alt="">
+    </div>
+    
+    <div class="mt-5 mb-3 d-flex justify-content-between flex-direction-row row cursor-pointer" 
+         *ngFor="let item of newsList; let i = index" 
+         dir="rtl" 
+         [routerLink]="['/newsDetails', item.NewsID]">
+         
+      <div class="col-md-8">
+        <h2 class="mb-3">{{ item.NewsTitle }}</h2>
+        <p>{{ item.NewsContent }}</p>
+  
+        <div class="d-flex justify-content-start">
+          <p class="w-fit bg-main px-2 rounded-3 mx-2">{{ item.Category }}</p>
+          <p>{{ item.NewsDate }}</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4 text-center" style="width: 400px; height: 100px;">
+        <img [src]="item.ImageURL" alt="" class="">
+      </div>
+    </div>
+  </section>
