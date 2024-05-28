@@ -26,22 +26,6 @@ export class PromptsComponent {
   
   constructor(private _tool: ToolsService, private promptShareService: PromptShareServiceService) {}
 
-  // selectCategory(category: string): void {
-  //   this.selectedCategory = category; // Set the selected category
-  //   this.promptShareService.changeSelectedCategory(category); // Share the selected category name
-
-  //   this.prompts = []; // Clear prompts from the previous selection
-
-  //   this._tool.getPromptsByCategory(category).subscribe({
-
-  //     next: (data ) => {
-  //       this.prompts = data.Prompt1;
-  //       this.QuestionText=data.QuestionText
-  //       console.log("Prompts for category", category, ":", this.prompts);
-  //     },
-  //     error: (err) => console.error('Error fetching prompts:', err)
-  //   });
-  // }
 
 
   ngOnInit(): void {
@@ -75,15 +59,6 @@ export class PromptsComponent {
     });
   }
 }
-//   selectCategory(category: string): void {
 
-//     this.toolsS.getPromptsByCategory(category).subscribe({
-//       next: (response: Prompts) => {
-//         this.tools = response.tools;
-//         console.log(response.tools);
-        
-//       },
-//       error: (error) => console.error('Error fetching data: ', error)
-//     });
-//   }
+
 

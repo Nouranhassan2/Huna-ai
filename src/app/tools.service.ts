@@ -3,27 +3,30 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, tap } from 'rxjs';
 import { Prompts } from './prompts';
 import { CurrentPrompts } from './current-prompts';
+import { environment } from 'src/environment/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ToolsService {
+  private baseUrl: string = environment.apiUrl;
+
   constructor(private _http: HttpClient) {}
 
   getTool(): Observable<any> {
-    return this._http.get('http://127.0.0.1:5000/tools');
+    return this._http.get(`${this.baseUrl}/tools`);
   }
 
   toolDetails(id: any): Observable<any> {
-    return this._http.get(`http://127.0.0.1:5000/ToolID=${id}`);
+    return this._http.get(`${this.baseUrl}/ToolID=${id}`);
   }
 
   getCategories(): Observable<any> {
-    return this._http.get('http://localhost:5000/categories');
+    return this._http.get(`${this.baseUrl}/categories `);
   }
 
   getPromptsByCategory(category: string): Observable<any> {
-    return this._http.get<CurrentPrompts[]>(`http://localhost:5000/prompts/category/${category}`).pipe(
+    return this._http.get<CurrentPrompts[]>(`${this.baseUrl}/prompts/category/${category}`).pipe(
       tap(data => console.log('API Response:', data))
     );
   }
@@ -33,10 +36,10 @@ export class ToolsService {
   getFilteredTools(category: string): Observable<any> {
     const encodedCategory = encodeURIComponent(category);
     console.log("Encoded category:", encodedCategory);
-    return this._http.get<any>(`http://127.0.0.1:5000/categoryName=${encodedCategory}`);
+    return this._http.get<any>(`${this.baseUrl}/categoryName=${encodedCategory}`);
   }
 
   searchToolsByName(name: string): Observable<any> {
-    return this._http.get<any>(`http://127.0.0.1:5000/Name=${encodeURIComponent(name)}`);
+    return this._http.get<any>(`${this.baseUrl}/Name=${encodeURIComponent(name)}`);
   }
 }
